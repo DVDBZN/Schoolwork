@@ -1,0 +1,16 @@
+﻿Build started 3/19/2016 11:17:21 AM.
+     1>Project "G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Pick a Card.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt DavidBozin_PickCard.cpp
+         DavidBozin_PickCard.cpp
+     1>g:\homework\2015 fall\cs& 131 c++\pick-a-card\pick a card\pick a card\davidbozin_pickcard.cpp(21): warning C4129: '(': unrecognized character escape sequence
+     1>g:\homework\2015 fall\cs& 131 c++\pick-a-card\pick a card\pick a card\davidbozin_pickcard.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Debug\Pick a Card.exe" /INCREMENTAL /NOLOGO winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Debug\Pick a Card.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Debug\Pick a Card.lib" /MACHINE:X86 Debug\DavidBozin_PickCard.obj
+         LINK : G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Debug\Pick a Card.exe not found or not built by the last incremental link; performing full link
+         Pick a Card.vcxproj -> G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Debug\Pick a Card.exe
+     1>Done Building Project "G:\Homework\2015 Fall\CS& 131 C++\Pick-a-Card\Pick a Card\Pick a Card\Pick a Card.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.72

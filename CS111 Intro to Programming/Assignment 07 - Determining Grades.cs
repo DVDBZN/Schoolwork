@@ -8,28 +8,30 @@ namespace ConsoleApplication18
         {
             Console.WriteLine("Please enter your grades.");
             Console.WriteLine("Do not enter any negative numbers or any numbers above 110.");
-                //I have had teachers that give grades that are more than 100 using bonus questions.
+            //I have had teachers that give grades that are more than 100 using bonus questions.
             Console.WriteLine("When complete, please type \"exit\" to complete the calculation.");
 
             Console.Write("Enter your grade: ");
             string gradeString = Console.ReadLine();
             int grade = int.Parse(gradeString);
-            int counter = 0;
+            int counter = 1;
             int total = grade;
 
             while (gradeString != "exit")
             {
+                Console.Write("Enter your grade: ");
+                gradeString = Console.ReadLine();
+
                 if (gradeString != "exit")
                 {
-                    Console.Write("Enter your grade: ");
-                    gradeString = Console.ReadLine();
+                    grade = int.Parse(gradeString);
 
                     counter = counter + 1;
                     total = total + grade;
                 }
                 if (gradeString == "exit")
                 {
-                    double average =  total / counter;
+                    double average = total / counter;
                     Console.WriteLine("Your average grade is " + average);
 
                     if (average >= 90 && average <= 110)

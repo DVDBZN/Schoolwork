@@ -29,7 +29,6 @@ namespace ConsoleApplication1
             double height2 = double.Parse(heightString2);
             Console.WriteLine("Area: " + width2 * height2);
             Console.WriteLine("Perimeter: " + ((width2 * 2) + (height2 * 2)));
-            // Jonathan was my partner.
         }
     }
 }

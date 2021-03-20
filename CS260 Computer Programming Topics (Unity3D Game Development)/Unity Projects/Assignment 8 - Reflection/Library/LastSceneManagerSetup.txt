@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Reflection.unity
+  isLoaded: 1
+  isActive: 1

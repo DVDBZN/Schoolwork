@@ -1,0 +1,34 @@
+(lp0
+(lp1
+S'Snuffles'
+p2
+aS'Turkish Van'
+p3
+aF4.0
+aS'albino'
+p4
+aa(lp5
+S'Mittens'
+p6
+aS'Siamese'
+p7
+aF0.5
+aS'White'
+p8
+aa(lp9
+S'Tiger'
+p10
+aS'Bengal'
+p11
+aF4.0
+aS'Spotted'
+p12
+aa(lp13
+S'Simba'
+p14
+aS'Maine coon'
+p15
+aF1.0
+aS'Orange'
+p16
+aa.

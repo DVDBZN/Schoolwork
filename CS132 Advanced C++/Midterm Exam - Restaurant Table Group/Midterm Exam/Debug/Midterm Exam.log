@@ -1,0 +1,4 @@
+﻿  TableGroup.cpp
+c:\users\dbozin60\documents\visual studio 2015\projects\midterm exam\midterm exam\tablegroup.h(12): warning C4200: nonstandard extension used: zero-sized array in struct/union
+  c:\users\dbozin60\documents\visual studio 2015\projects\midterm exam\midterm exam\tablegroup.h(12): note: Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+  Midterm Exam.vcxproj -> c:\users\dbozin60\documents\visual studio 2015\Projects\Midterm Exam\Debug\Midterm Exam.exe

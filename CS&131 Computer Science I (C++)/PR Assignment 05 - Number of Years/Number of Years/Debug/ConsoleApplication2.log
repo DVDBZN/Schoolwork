@@ -1,0 +1,10 @@
+﻿Build started 9/29/2015 6:59:45 PM.
+     1>Project "C:\Users\David\Documents\Visual Studio 2015\Projects\Number of Years\ConsoleApplication2.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>Link:
+         ConsoleApplication2.vcxproj -> C:\Users\David\Documents\Visual Studio 2015\Projects\Number of Years\Debug\DavidBozin_9-29-15.exe
+     1>Done Building Project "C:\Users\David\Documents\Visual Studio 2015\Projects\Number of Years\ConsoleApplication2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07

@@ -1,0 +1,7 @@
+Gordan "Goldhand" Jo	$1000000
+Jack Black		$10000
+Lucky George		$1000
+Everyday Joe		$500
+Unlucky George		$0
+Really Unlucky George	$-1000
+Dave			$505

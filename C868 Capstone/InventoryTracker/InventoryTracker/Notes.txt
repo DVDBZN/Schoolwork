@@ -1,0 +1,20 @@
+﻿(Future development plans not related to assignment submission)
+
+MasterDetailPage:
+	Tutorial:
+	http://www.mukeshkumar.net/articles/xamarin/simple-resume-mobile-app-with-xamarin-forms-master-detail-page-and-csharp
+	Example:
+	https://github.com/xamarin/xamarin-forms-samples/tree/master/Navigation/MasterDetailPage/MasterDetailPageNavigation
+
+Login:
+	Example:
+	https://github.com/xamarin/xamarin-forms-samples/tree/master/Navigation/LoginFlow
+
+Cascade delete:
+	Potential help:
+	https://stackoverflow.com/questions/52263027/sqlite-extension-for-xamarin-forms-delete-on-cascade-not-working-but-the-the
+	https://forums.xamarin.com/discussion/20304/announcement-cascade-operations-in-sqlite-net-extensions
+	https://www.codejourney.net/2017/05/sqlite-net-extensions-many-to-many-relationships/
+
+	Reminders and notifications?
+	Tags?

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InventoryTracker.Views.SearchOptions">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <SearchBar x:Name="LocalSearch"
+                       Placeholder="Current object search..."
+                       BackgroundColor="#FFFFFF"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Margin="0, 32, 0, 16">
+                <Label Text="Global search"/>
+                <Switch x:Name="ScopeToggle"
+                        IsToggled="true"/>
+                <Label Text="Local search"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         Margin="0, 16, 0, 32">
+                <Label Text="Sort by: "
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"/>
+                <Picker x:Name="SortPicker"
+                        WidthRequest="200"
+                        BackgroundColor="LightGray">
+                    <Picker.Items>
+                        <x:String>Type</x:String>
+                        <x:String>Name</x:String>
+                        <x:String>Description</x:String>
+                        <x:String>CreatedOn</x:String>
+                        <x:String>LastChangedOn</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <Frame CornerRadius="32"
+                   HorizontalOptions="Center"
+                   Margin="32, 0, 32, 16">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Search within: "
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Vertical">
+                        <CheckBox x:Name="NameCheck"
+                                  IsChecked="True"
+                                  HeightRequest="24"/>
+                        <CheckBox x:Name="DescCheck"
+                                  IsChecked="True"
+                                  HeightRequest="24"/>
+                        <CheckBox x:Name="AddedCheck"
+                                  HeightRequest="24"/>
+                        <CheckBox x:Name="ChangedCheck"
+                                  HeightRequest="24"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Name"
+                               HeightRequest="24"/>
+                        <Label Text="Description"
+                               HeightRequest="24"/>
+                        <Label Text="Date Added"
+                               HeightRequest="24"/>
+                        <Label Text="Date Last Changed"
+                               HeightRequest="24"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="SearchButton"
+                    Text="Search"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    HeightRequest="64"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="32,8"/>
+            <Button x:Name="CancelButton"
+                    Text="Cancel"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    HeightRequest="64"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="32,8"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

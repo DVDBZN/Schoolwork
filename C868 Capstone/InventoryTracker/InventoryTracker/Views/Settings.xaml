@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InventoryTracker.Views.Settings"
+             Title="Settings">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="FillAndExpand"
+                     Margin="32">
+            <Entry x:Name="UsernameEntry"
+                   Text="{Binding Username}"
+                   Placeholder="Username..."
+                   HorizontalOptions="Center"
+                   WidthRequest="200"
+                   Margin="0,8"/>
+            <Entry x:Name="OldPasswordEntry"
+                   Placeholder="Current Password..."
+                   HorizontalOptions="Center"
+                   WidthRequest="200"
+                   Margin="0,8"
+                   IsPassword="True"/>
+            <Entry x:Name="NewPasswordEntry"
+                   Placeholder="New Password..."
+                   HorizontalOptions="Center"
+                   WidthRequest="200"
+                   Margin="0,8"
+                   IsPassword="True"/>
+            <Label x:Name="ErrorText"
+                   Text="Password is incorrect"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   TextColor="Red"
+                   Margin="0,20"
+                   IsVisible="false"/>
+            <Button Text="Save"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="Save"/>
+            <Button Text="Cancel"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="Cancel"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

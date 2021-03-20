@@ -1,0 +1,9 @@
+1. Confirm menu navigation is functional
+
+2. Find site contact information
+
+3. Find information about available recreation
+
+4. Find answers to frequently asked questions
+
+5. Test fluid design/mobile device compatibility

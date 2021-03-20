@@ -1,0 +1,539 @@
+html, body {
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Navigation CSS*/
+nav {
+	display: block;
+	background-color: #12345e;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	background-color: #12345e;
+	text-decoration: none;
+	letter-spacing: 4px;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	padding: 16px 20px;
+	text-decoration: none;
+	font-family: Quicksand;
+}
+
+nav li b {
+	display: block;
+	padding: 10px 0px;
+	font-family: Quicksand;
+	font-size: 140%;
+	font-weight: lighter;
+}
+
+nav li a:hover {
+	background-color: #0e2645;
+}
+
+/*General content CSS*/
+#content-wrap {
+	position: relative;
+	width: 100%;
+	margin-top: 52px;
+	overflow: hidden;
+	background-color: #dde8f0;
+}
+
+#content {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: #dde8f0;
+	font-family: Quicksand;
+	font-weight: lighter;
+}
+
+#content h1 {
+	position: absolute;
+	top: 0px;
+	margin-top: 48px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: Quicksand;
+	font-size: 200%;
+	font-weight: lighter;
+	text-shadow: 1px 1px 2px black;
+	letter-spacing: 8px
+}
+
+/*Home page CSS*/
+#column {
+	display: block;
+	float: left;
+	width: 27%;
+	height: 502px;
+	margin: 12px;
+	padding: 24px 2%;
+	overflow: hidden;
+}
+
+#column h3 {
+	margin: 0px;
+	padding-bottom: 12px;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	color: black;
+	font-size: 140%;
+}
+
+#all-columns {
+	 margin: 0px 1%;
+	 overflow: hidden;
+}
+
+#preview {
+	position: relative;
+	top: 0px;
+	width: 200px;
+	height: 100%;
+	text-align: left;
+	float: left;
+}
+
+#preview h5 {
+	width: 80%;
+	margin: 0px;
+	margin-left: 24px;
+	position: relative;
+	top: 4px;
+	font-size: 120%;
+	font-weight: lighter;
+}
+
+#preview h3 {
+	width: 80%;
+	margin-left: 24px;
+	padding: 6px;
+	position: absolute;
+	bottom: 0px;
+	background-color: #001635;
+	color: white;
+	font-weight: lighter;
+	text-align: center;
+}
+
+#column img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	float: left;
+}
+
+#column ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#column a {
+	margin: 16px 0px 0px 0px;
+	width: 100%;
+	height: 100px;
+	display: block;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: black;
+	border-width: 2px;
+	color: black;
+}
+
+#base {
+	margin: 0px;
+	position: relative;
+	bottom: 0px;
+	height: 400px;
+	display: block;
+	background-position: left, center, right;
+	background-size: 33.33% 100%;
+}
+
+#base div {
+	display: block;
+	height: 400px;
+	width: 33.33%;
+	float: left;
+	background-size: cover;
+	/*overflow: hidden;*/
+}
+
+#base a {
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: Quicksand;
+	font-size: 200%;
+	font-weight: lighter;
+	text-decoration: none;
+	background-color: #001635;
+	padding: 12px;
+}
+
+/*Lodging/Transportation/Dining CSS*/
+#filters {
+	display: block;
+	float: left;
+	margin-left: 2%;
+	margin-top: 148px;
+	width: 18%;
+	padding-top: 24px;
+	background-color: #dde8f0;
+	box-shadow: 1px 1px 4px;
+}
+
+#filters h2 {
+	margin: 12px;
+	font-weight: lighter;
+}
+
+#filters h6 {
+	margin: 0px;
+	padding: 8px 12px;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 90%;
+	color: black;
+}
+
+#filters form {
+	position: relative;
+	margin: 32px;
+	text-align: left;
+}
+
+#filters input {
+	margin-left: 20%;
+}
+
+#filters label {
+	margin: 12px 6px;
+}
+
+#results {
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+#results ul {
+	display: block;
+	width: 80%;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 100px;
+}
+
+#results li {
+	position: relative;
+	list-style-type: none;
+	width: 80%;
+	height: 300px;
+	margin: auto;
+	padding: 24px;
+}
+
+#results li div {
+	float: left;
+	max-width: 45%;
+}
+
+#results img {
+	width: 360px;
+	height: 240px;
+	object-fit: cover;
+	float: left;
+	margin: 24px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+#results h5 {
+	color: black;
+	font-size: 110%;
+	text-align: left;
+	margin: 24px;
+}
+
+#results h6 {
+	color: black;
+	font-size: 90%;
+	text-align: left;
+	margin-left: 24px;
+	height: 120px;
+}
+
+#results a {
+	color: white;
+	background-color: #001635;
+	margin-left: 24px;
+	display: block;
+	padding: 4px 0px;
+	font-size: 130%;
+	border: none;
+	width: 200px;
+	text-decoration: none;
+}
+
+#resultsnav {
+	display: block;
+	float: left;
+	width: 100%;
+	max-width: 50%;
+	margin: 0px;
+	margin-left: 50%;
+}
+
+#resultsnav a {
+	float: left;
+	margin: 24px 0px;
+	width: 10%;
+	transform: translate(-100%, 0%);
+}
+
+/*Recreation CSS*/
+#recreation {
+	width: 80%;
+	margin: 8% auto;
+	text-align: left;
+	color: black;
+	font-size: 120%;
+}
+
+#recreation p {
+
+}
+
+#recreation img {
+	padding: 0px 24px 24px;
+	float: right;
+	max-width: 30%;
+}
+
+/*FAQ page CSS*/
+#faq {
+	display: block;
+	margin: 0px auto;
+	padding: 24px;
+	max-width: 60%;
+	text-align: left;
+	font-family: Quicksand;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+#faq li {
+	display: block;
+	padding: 8px 24px;
+	font-weight: lighter;
+}
+
+#q {
+	font-weight: bolder;
+	font-size: 150%;
+	padding-top: 12px;
+	border-top: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+/*Footer*/
+footer {
+	display: inline-block;
+	padding: 6px 0px;
+	margin: 0;
+	background-color: #001635;
+	color: white;
+	width: 100%;
+	height: 48px;
+	font-family: Quicksand;
+}
+
+footer p {
+	padding: 0px 0px;
+	float: left;
+}
+
+
+/*Prefooter section containing customer assurance statement, contact form, and other contact details*/
+#prefooter {
+	display: block;
+	padding: 0px;
+	margin: 0;
+	float: left;
+	background-color: #12345e;;
+	width: 100%;
+}
+
+#prefooter h6 {
+	margin: 0;
+	padding: 48px 4%;
+	width: 25%;
+	float: left;
+	font-size: 90%;
+	font-family: Helvetica;
+	font-weight: lighter;
+	color: white;
+	font-style: italic;
+}
+
+#prefooter form {
+	margin: 0;
+	padding: 48px 4%;
+	width: 25%;
+	float: left;
+	font-size: 90%;
+	font-family: Helvetica;
+	font-weight: lighter;
+	background-color: #12345e;
+}
+
+#prefooter input {
+	width: 100%;
+	margin: 4px 0px;
+	padding: 6px 10px;
+	color: white;
+	background-color: #dde8f0;
+	border: none;
+	border-radius: 2px;
+}
+
+#prefooter input[type=submit] {
+	background-color: #001635;
+	color: white;
+	font-family: Quicksand;
+	font-size: 130%;
+	border: none;
+}
+
+#prefooter textarea {
+	width: 100%;
+	height: 320px;
+	margin: 4px 0px;
+	padding: 6px 10px;
+	resize: none;
+	font-family: Helvetica;
+	font-weight: lighter;
+	border-radius: 2px;
+	background-color: #dde8f0;
+}
+
+#prefooter div {
+	margin: 0;
+	padding: 48px 4%;
+	width: 25%;
+	height: 404px;
+	float: left;
+	font-size: 100%;
+	font-weight: lighter;
+	color: black;
+}
+
+#prefooter div ul {
+	margin: auto;
+	text-align: center;
+	padding: 12px 24px;
+	height: 372;
+	list-style-type: none;
+	border-style: solid;
+	border-color: #001635;
+	border-width: 4px;
+	background-color: #dde8f0;
+}
+
+#prefooter div li {
+	padding: 14px 0px;
+	width: 100%;
+	font-family: Quicksand;
+	font-size: 100%;
+}
+
+#prefooter div a {
+	display: block;
+	margin: -10px 0px;
+	padding: 4px 0px;
+	background-color: #001635;
+	color: white;
+	font-family: Quicksand;
+	font-size: 130%;
+	border: none;
+	width: 100%;
+	text-decoration: none;
+}
+
+/*Media quireies for responsive design*/
+@media screen and (min-width: 1600px) { 
+	#content-wrap {max-width: 1600px; margin: auto; margin-top: 52px;}
+}
+
+@media screen and (max-width: 1170px) { 
+	nav li {float: none;}
+	nav li a {padding: 4px 0px; font-size: 120%}
+	nav li b {display: none;}
+	footer {height: 88px;}
+	footer p {float: none !important; text-align: center;}
+	#prefooter h6 {float: none; width: 50%; margin: auto; margin-bottom: 0px;}
+	#prefooter form {float: none; width: 50%; margin: auto; margin-bottom: 0px;}
+	#prefooter div {float: none; width: 50%; margin: auto; margin-bottom: 0px;}
+	#content-wrap {margin-top: 192px;}
+	#content h1 {margin-top: 74px;}
+	#column {float: none; width: 50%; margin: 24px auto;}
+	#recreation img {float: none; display: block; max-width: 80%;}
+	#resultsnav {width: 50%;}
+	#filters {float: none; width: 50%; margin-left: auto; margin-right: auto;}
+	#filters input {margin-left: 30%;}
+	#results ul {float: none; margin-left: auto; margin-right: auto;}
+	#results li {width: 100%; margin: auto 0px;}
+	#results li div {max-width: 100%;}
+	#results img {max-width: 100%; margin: 24px 0px;}
+	#faq {padding: 0px; padding-top: 64px;}
+	#faq ul {padding: 0px;}
+	#faq li {padding: 12px 0px;}
+}
+
+@media screen and (max-width: 600px) {
+	footer {height: 120px;}
+	#prefooter h6 {float: none; width: 80%; margin: auto; margin-bottom: 0px;}
+	#prefooter form {float: none; width: 80%; margin: auto; margin-bottom: 0px;}
+	#prefooter div {float: none; width: 80%; margin: auto; margin-bottom: 0px;}
+	#column {width: 100%;}
+	#preview {width: 50%;}
+	#content h1 {letter-spacing: 3px;}
+	#results img {margin-top: 48px;}
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(Quicksand/static/Quicksand-Regular.ttf);
+}

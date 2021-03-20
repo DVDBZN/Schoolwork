@@ -1,0 +1,13 @@
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\bin\Debug\C968_Software1CSharp-DBozin9.exe.config
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\bin\Debug\C968_Software1CSharp-DBozin9.exe
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\bin\Debug\C968_Software1CSharp-DBozin9.pdb
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp-DBozin9.csprojResolveAssemblyReference.cache
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp_DBozin9.AddPartForm.resources
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp_DBozin9.AddProductForm.resources
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp_DBozin9.MainForm.resources
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp_DBozin9.ModifyPartForm.resources
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp_DBozin9.ModifyProductForm.resources
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp_DBozin9.Properties.Resources.resources
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp-DBozin9.csproj.GenerateResource.Cache
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp-DBozin9.exe
+C:\Users\David\OneDrive\Classwork\WGU\C968\C968_Software1CSharp-DBozin9\C968_Software1CSharp-DBozin9\obj\Debug\C968_Software1CSharp-DBozin9.pdb

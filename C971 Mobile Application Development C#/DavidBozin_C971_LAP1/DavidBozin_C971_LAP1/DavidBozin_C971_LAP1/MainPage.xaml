@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DavidBozin_C971_LAP1.MainPage">
+    <StackLayout Margin="30,0">
+        <Frame Padding="0"
+               VerticalOptions="Start"
+               CornerRadius="0" 
+               HasShadow="True" >
+            <StackLayout Margin="0" Orientation="Horizontal">
+                <Image Source="owl_logo.png"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start" Margin="10,5"/>
+                <Label Text="Term view" 
+                       VerticalTextAlignment="Center" 
+                       FontAttributes="Bold" 
+                       FontSize="32"/>
+            </StackLayout>
+        </Frame>
+        <StackLayout VerticalOptions="StartAndExpand"
+                     Margin="0,0">
+            <ListView x:Name="TermsList"
+                      ItemSelected="ViewTerm"
+                      HasUnevenRows="True"
+                      RowHeight="-1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame Padding="1"
+                                   Margin="0.5, 0.5">
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding Name}"
+                                           FontSize="20"/>
+                                    <Label Text="{Binding End}"
+                                           FontSize="12"/>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="+"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    WidthRequest="64"
+                    HeightRequest="64"
+                    Padding="0,0,0,2"
+                    Clicked="AddTerm"/>
+            <Button Text="Generate Data"
+                    Clicked="GenerateData"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:InventoryTracker"
+                  x:Class="InventoryTracker.MainPage"
+                  NavigationPage.HasNavigationBar="false">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" Padding="15">
+            <ContentPage.Content>
+                <StackLayout Margin="10" Orientation="Vertical">
+                    <SearchBar x:Name="GlobalSearch"
+                               Placeholder="Global search..."/>
+                    <StackLayout>
+                        <ListView x:Name="BreadCrumbs"
+                                  ItemSelected="BreadcrumbSelected"
+                                  HasUnevenRows="True"
+                                  RowHeight="-1"
+                                  VerticalOptions="FillAndExpand">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Orientation="Horizontal"
+                                                     Padding="{Binding Pad}">
+                                            <Label Text=" L "
+                                                   FontSize="20"
+                                                   VerticalOptions="Start"
+                                                   LineBreakMode="NoWrap"/>
+                                            <Label Text="{Binding Name}"
+                                                   FontSize="20"
+                                                   LineBreakMode="MiddleTruncation"/>
+                                            <Label Text="{Binding Type, StringFormat='({0})'}"
+                                                   FontSize="16"
+                                                   TextColor="LightGray"
+                                                   LineBreakMode="TailTruncation"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    <ListView x:Name="MenuList" ItemSelected="OnMenuItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell Text="{Binding Title}"
+                                           ImageSource="{Binding IconSource}">
+                                </ImageCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Text="Logout"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start"
+                            TextColor="#8C0000"
+                            Clicked="Logout"/>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

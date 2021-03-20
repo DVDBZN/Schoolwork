@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DavidBozin_C971_LAP1.NewAssessment">
+    <StackLayout Margin="30,0">
+        <Frame Padding="0"
+           VerticalOptions="Start"
+           CornerRadius="0" 
+           HasShadow="True" >
+            <StackLayout Margin="0" Orientation="Horizontal">
+                <Image Source="owl_logo.png"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start" Margin="10,5"/>
+                <Label Text="Edit/New Assessment" 
+                   VerticalTextAlignment="Center" 
+                   FontAttributes="Bold" 
+                   FontSize="32"/>
+            </StackLayout>
+        </Frame>
+        <StackLayout VerticalOptions="StartAndExpand"
+                     HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Assessment Name: "
+                       VerticalTextAlignment="Center"
+                       WidthRequest="150"
+                       FontSize="20"/>
+                <Entry x:Name="NameEntry"
+                       Text="{Binding Name}"
+                       Placeholder="Enter text..."
+                       HorizontalOptions="End"
+                       WidthRequest="150"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Start Date: "
+                       VerticalTextAlignment="Center"
+                       WidthRequest="150"
+                       FontSize="20"/>
+                <DatePicker x:Name="StartDate"
+                            Date="{Binding Start}"
+                            MinimumDate="01/01/1970"
+                            MaximumDate="12/31/2200"
+                            HorizontalOptions="End"
+                            WidthRequest="100"/>
+                <TimePicker x:Name="StartTime"
+                            HorizontalOptions="End"
+                            WidthRequest="100"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="End Date: "
+                       VerticalTextAlignment="Center"
+                       WidthRequest="150"
+                       FontSize="20"/>
+                <DatePicker x:Name="EndDate"
+                            Date="{Binding End}"
+                            MinimumDate="01/01/1970"
+                            MaximumDate="12/31/2200"
+                            HorizontalOptions="End"
+                            WidthRequest="100"/>
+                <TimePicker x:Name="EndTime"
+                            HorizontalOptions="End"
+                            WidthRequest="100"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Type"
+                       VerticalTextAlignment="Center"
+                       WidthRequest="150"
+                       FontSize="20"/>
+                <Picker x:Name="TypePicker"
+                        SelectedItem="{Binding Type}"
+                        Title="Type">
+                    <Picker.Items>
+                        <x:String>Performance</x:String>
+                        <x:String>Objective</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Start/End Notifications "
+                       VerticalTextAlignment="Center"
+                       WidthRequest="150"
+                       FontSize="20"/>
+                <Switch x:Name="NotifySwitch"
+                        IsToggled="{Binding Notify}"
+                        HorizontalOptions="End"
+                        WidthRequest="150"/>
+            </StackLayout>
+
+            <Button Text="Save"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    VerticalOptions="End"
+                    Clicked="SaveAssessment"
+                    WidthRequest="200"/>
+            <Button Text="Cancel"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    VerticalOptions="End"
+                    Clicked="Cancel"
+                    WidthRequest="200"/>
+            <Button Text="Delete"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    BorderWidth="4"
+                    BorderColor="Black"
+                    CornerRadius="32"
+                    VerticalOptions="End"
+                    Clicked="Delete"
+                    WidthRequest="200"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InventoryTracker.Views.LoginPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Start"
+                     HorizontalOptions="Center">
+            <Label Text="Inventory&#x0a;Tracker"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,60,0,60"
+                   WidthRequest="250"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   CharacterSpacing="2"/>
+            <Entry x:Name="UsernameEntry"
+                   Text="{Binding Username}"
+                   Placeholder="Username..."
+                   WidthRequest="200"/>
+            <Entry x:Name="PasswordEntry"
+                   Text="{Binding Password}"
+                   Placeholder="Password..."
+                   WidthRequest="200"
+                   IsPassword="True"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <CheckBox x:Name="NewAccountCheck"
+                          HorizontalOptions="Start"/>
+                <Label Text="Create new account"
+                       WidthRequest="250"
+                       FontSize="16"
+                       HorizontalOptions="Center"
+                       VerticalTextAlignment="Center"
+                       Margin="0,20,0,20"/>
+            </StackLayout>
+            <Button Text="Login/Signup"
+                    FontSize="24"
+                    BorderWidth="3"
+                    BorderColor="Black"
+                    BackgroundColor="White"
+                    CornerRadius="32"
+                    VerticalOptions="End"
+                    Clicked="Login"
+                    WidthRequest="150"/>
+            <Label x:Name="ErrorText"
+                   Text="Username already exists."
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   TextColor="Red"
+                   Margin="0,20,0,0"
+                   IsVisible="false"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -49,3 +49,10 @@ Console application Go Fish game (play against algorithm or watch algorithm play
 https://github.com/DVDBZN/Schoolwork/tree/main/CS132%20Advanced%20C%2B%2B/Final%20Project%20-%20Go%20Fish/1.1
 
 Competencies: C++, OOP, Windows application, Console application 
+#
+### Color Mixer ###
+Windows Forms application that mixes two user-input colors into a third one
+
+https://github.com/DVDBZN/Schoolwork/tree/main/ColorMixer
+
+Competencies: C#, Windows Forms, Windows application, UI, exception handling

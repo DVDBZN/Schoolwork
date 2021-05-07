@@ -56,3 +56,5 @@ Windows Forms application that mixes two user-input colors into a third one
 https://github.com/DVDBZN/Schoolwork/tree/main/ColorMixer
 
 Competencies: C#, Windows Forms, Windows application, UI, exception handling
+
+Download link: http://www.bozinbrothers.com/ColorMixer/ColorMixer.zip
